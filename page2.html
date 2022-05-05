@@ -92,41 +92,30 @@
           <div class="container bloc-lg">
             <div class="row">
               <div class="col-sm-6">
-                <form
-                  id="form_1"
-                  novalidate
-                  success-msg="Your message has been sent."
-                  fail-msg="Sorry it seems that our mail server is not responding, Sorry for the inconvenience!"
-                >
+                <form id="form_1" novalidate success-msg="Your message has been sent." fail-msg="Sorry it seems that our mail server is not responding, Sorry for the inconvenience!">
                   <div class="form-group">
-                    <label> Votre nom </label>
-                    <input id="name" class="form-control" required />
+                    <label for="nom"> Entrez votre nom</label>
+                    <input id="nom" class="form-control" type="text" placeholder="BOUR">
                   </div>
                   <div class="form-group">
-                    <label>Votre prénom </label>
-                    <input id="prenom" class="form-control" required />
+                    <label for="prenom"> Entrez votre prénom</label>
+                    <input id="prenom" class="form-control" type="text" placeholder="Estelle">
                   </div>
                   <div class="form-group">
-                    <label> Votre adresse email </label>
-                    <input id="email" class="form-control" type="email" required/>
+                    <label for="email">Entrez votre mail</label>
+                    <input id="email" class="form-control" type="email" >
                   </div>
                   <div class="form-group">
-                    <label> Votre téléphone</label>
-                    <input class="form-control" type="text"required/></div>
-                  <div class="form-group">
-                    <label>Votre sujet<br /> </label
-                    ><textarea
-                      id="message"
-                      class="form-control"
-                      rows="4"
-                      cols="50"
-                      required
-                    ></textarea>
+                    <label for="numero"> Entrez votre téléphone</label>
+                    <input id="numero" class="form-control" type="text"/>
                   </div>
-                  <button
+                  <div class="form-group">
+                    <label for="message">Votre sujet<br/></label>
+                   <textarea  id="message" class="form-control" rows="4"cols="50"></textarea>
+                 </div>
+                 <button
                     class="bloc-button btn btn-lg btn-block cta-hero btn-atomic-tangerine"
-                    type="submit"
-                  >
+                    type="submit">
                     Envoyer
                   </button>
                 </form>
@@ -161,28 +150,28 @@
                     <div class="text-center">
                       <a class="social" href="https://twitter.com/La_panthere_agenceLyon"
                         ><span class="fa fa-twitter icon-md"></span
-                      ></a>
+                      ><h5>Suivez-nous sur Twitter</h5></a>
                     </div>
                   </div>
                   <div class="col-sm-3">
                     <div class="text-center">
                       <a class="social" href="https://fr-fr.facebook.com/lapanthereagenceLyon/"
                         ><span class="fa fa-facebook icon-md"></span
-                      ></a>
+                      ><h5>Suivez-nous sur Facebook</h5></a>
                     </div>
                   </div>
                   <div class="col-sm-3">
                     <div class="text-center">
                       <a class="social" href="https://dribbble.com/tags/la_panthere_agence_Lyon"
                         ><span class="fa fa-dribbble icon-md"></span
-                      ></a>
+                      ><h5>Suivez-nous sur Dribbble</h5></a>
                     </div>
                   </div>
                   <div class="col-sm-3">
                     <div class="text-center">
                       <a class="social" href="https://www.instagram.com/lacpanthereagenceLyon/?hl=fr"
                         ><span class="fa fa-instagram icon-md"></span
-                      ></a>
+                      ><h5>Suivez-nous sur Instagram</h5></a>
                     </div>
                   </div>
                 </div>
