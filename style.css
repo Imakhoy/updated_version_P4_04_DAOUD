@@ -1,3 +1,6 @@
+
+
+
 body {
     margin: 0;
     padding: 0;
@@ -336,10 +339,14 @@ body {
     text-align: inherit;
   }
   
-  .nav > li a:hover,
-  .nav > li a:focus {
+.nav > li a:hover,
+.nav > li a:focus, 
+.navbar-brand:focus, 
+a[data-gallery-id="gallery-1"]:focus {
     background: transparent;
-  }
+    border-bottom: 1px solid black;
+}
+
   
   .navbar-toggle {
     margin: 10px 10px 0 0;
@@ -476,9 +483,12 @@ body {
     border: 1px solid rgba(0, 0, 0, 0.08);
     border-bottom-color: rgba(0, 0, 0, 0.1);
     text-shadow: 0 1px 0 rgba(0, 0, 1, 0.1);
-    box-shadow: 0 1px 3px rgba(0, 0, 1, 0.25),
-      inset 0 1px 0 0 rgba(255, 255, 255, 0.15);
+    box-shadow: 0 1px 3px rgba(0, 0, 1, 0.25), inset 0 1px 0 0 rgba(255, 255, 255, 0.15);
   }
+
+  .btn-clean:hover {
+    border: 1px solid #c27956!important;
+}
   
   .icon-md {
     font-size: 30px !important;
@@ -513,7 +523,6 @@ body {
   .form-control {
     border-color: rgba(0, 0, 0, 0.1);
     box-shadow: none;
-    color: red;
   
   }
   
@@ -766,6 +775,8 @@ body {
   }
   
   .bold-link {
+    display: block;
+    margin-top: 30px;
     font-weight: 900;
     text-decoration: underline !important;
   }
@@ -892,8 +903,6 @@ body {
     .bloc-fill-screen .fill-bloc-top-edge,
     .bloc-fill-screen .fill-bloc-bottom-edge {
       padding: 0 20px;
-      padding-left: 0;
-      padding-right: 0;
     }
   }
   
@@ -982,13 +991,13 @@ body {
       margin-left: 10px;
     }
     .bloc {
-      padding-left: 0;
-      padding-right: 0;
+      padding-left: 10px;
+      padding-right: 10px;
     }
     .bloc-xxl,
     .bloc-xl,
     .bloc-lg {
-      padding: 40px 0;
+      padding: 40px 10px;
     }
     .bloc-sm,
     .bloc-md {
@@ -1034,12 +1043,18 @@ body {
       width: 180px;
       height: 320px;
     }
+    .black-background {
+      padding: 40px 0px;
+  }
+  .hero-bloc-text {
+      font-size: 30px;
+  }
   }
   
   @media (max-width: 400px) {
     .bloc {
-      padding-left: 0;
-      padding-right: 0;
+      padding-left: 10px;
+      padding-right: 10px;
     }
   }
   
@@ -1048,4 +1063,9 @@ body {
       text-align: center;
     }
   }
-  
+
+  @media (max-width: 500px) {
+    .icon-md {
+        font-size: 30px;
+    }
+}
